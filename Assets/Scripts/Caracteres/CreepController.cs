@@ -9,11 +9,16 @@ public class CreepController : MonoBehaviour
 {
     NavMeshAgent angent;
 
-    public GameObject finalTarget;
+    GameObject finalTarget;
 
      void Awake()
     {
         angent = GetComponent <NavMeshAgent>();
+        GameObject obj = GameObject.FindWithTag("Finish");
+        if (obj != null)
+        {
+            finalTarget = obj;
+        }
         
     }
 
