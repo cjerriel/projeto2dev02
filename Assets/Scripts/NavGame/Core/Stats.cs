@@ -11,7 +11,7 @@ public class Stats
 
    public int armor = 1;
 
-   public float atttackSpeed = 1f;
+   public float attackSpeed = 1f;
     
 }
 }
