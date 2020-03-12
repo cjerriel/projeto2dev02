@@ -9,7 +9,7 @@ public class CreepController : CombatGameobject
 {
     NavMeshAgent angent;
 
-    GameObject finalTarget;
+    DamageableGameObject finalTarget;
 
      protected override void Awake()
     {
@@ -18,11 +18,23 @@ public class CreepController : CombatGameobject
         GameObject obj = GameObject.FindWithTag("Finish");
         if (obj != null)
         {
-            finalTarget = obj;
+            finalTarget = obj.GetComponent<DamageableGameObject>();
         }
         
     }
-
+     
+     protected override void Update()
+     {
+         base.Update();
+         if(finalTarget == null)
+         {
+             return;
+         }
+         if(IsInTouch(finalTarget))
+         {
+             AttackOnCooldown(finalTarget);
+         }
+     }
    
     void Start()
     {
