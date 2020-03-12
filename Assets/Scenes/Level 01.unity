@@ -647,6 +647,62 @@ Transform:
   m_Father: {fileID: 1921646489}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1401057456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1401057458}
+  - component: {fileID: 1401057457}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1401057457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401057456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: add96420874584f41b9c40e8c6371368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - name: bloop
+    audio: {fileID: 8300000, guid: a1fb7020e4313394a905154de1077f05, type: 3}
+  - name: coin-pickup
+    audio: {fileID: 8300000, guid: 9a2c5d1bc69c6b346bc15bcefad90c31, type: 3}
+  - name: enemy-hit
+    audio: {fileID: 8300000, guid: 305350b345d68ae409fa00876a6bb432, type: 3}
+  - name: error
+    audio: {fileID: 8300000, guid: 19102f1a5abd349479e098f482cfa5a4, type: 3}
+  - name: fail
+    audio: {fileID: 8300000, guid: dd11a5cffaf896e4e936e78158496724, type: 3}
+  - name: level-complete
+    audio: {fileID: 8300000, guid: a3eb2fced169a1f4e87be7c45e486a94, type: 3}
+--- !u!4 &1401057458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401057456}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 22.2, y: 0.08333337, z: 6.62}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1593564267
 GameObject:
   m_ObjectHideFlags: 0
